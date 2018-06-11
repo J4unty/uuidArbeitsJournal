@@ -1,7 +1,7 @@
 @import '~swiper/dist/css/swiper.min.css';
 
 div.swiper-pagination {
-    background: blueviolet;
+    //background: blueviolet;
 
     //.swiper-pagination-bullet {
     div {
@@ -26,4 +26,19 @@ div.swiper-pagination {
 div[role="button"] {
     font-size: 100px;
     color: aquamarine;
+}
+.mat-list-item {
+  height: auto;
+  display: block;
+  white-space: normal;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.mat-list-item-content {
+  display: block;
+  height: auto;
+}
+p {
+  display: block;
+  margin: 0px;
 }
