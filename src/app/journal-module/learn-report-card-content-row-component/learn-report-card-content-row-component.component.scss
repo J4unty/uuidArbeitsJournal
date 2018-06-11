@@ -1,0 +1,29 @@
+@import '~swiper/dist/css/swiper.min.css';
+
+div.swiper-pagination {
+    background: blueviolet;
+
+    //.swiper-pagination-bullet {
+    div {
+        margin: 15px;
+        width: 100px;
+        height: 100px !important;
+        text-align: center;
+        line-height: 20px;
+        font-size: 100px;
+        color:#fff;
+        opacity: 1;
+        // background: rgba(0,0,0,0.2);
+        // background: #000;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #007aff;
+    }
+}
+div[role="button"] {
+    font-size: 100px;
+    color: aquamarine;
+}

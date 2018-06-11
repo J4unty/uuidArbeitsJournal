@@ -1,0 +1,39 @@
+<!--
+  Show text if needed or else the picture carusel
+  we can even do lists in here with the correct types
+-->
+<p *ngIf="data.type === 'text'">
+  {{ data.content }}
+</p>
+<div *ngIf="data.type === 'images'">
+  <div class="swiper-container" [swiper]="config" [(index)]="index">
+    <div class="swiper-wrapper">
+      <div *ngFor="let image of data.content" class="swiper-slide">
+        <div>
+          <img [src]="image" style="height: 100%;width: 100%;">
+        </div>
+      </div>
+    </div>
+  
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- <div class="swiper-scrollbar"></div> -->
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+<p *ngIf="data.type === 'list'">
+  <mat-list>
+    <mat-list-item *ngFor="let listItem of data.content">
+      <mat-icon mat-list-icon>arrow_forward_ios</mat-icon>
+      <app-learn-report-card-content-row-component
+        [data]="listItem"
+        >
+      </app-learn-report-card-content-row-component>
+    </mat-list-item>
+  </mat-list>
+    <!--
+      <ul>
+      Make it posslble for sub points!
+    -->
+</p>

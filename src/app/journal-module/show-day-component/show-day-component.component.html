@@ -1,0 +1,7 @@
+<div>
+  <h1>{{data.title}}</h1>
+  <app-learn-report-card-component
+    *ngFor="let card of data.content"
+    [data]="card">
+  </app-learn-report-card-component>
+</div>
