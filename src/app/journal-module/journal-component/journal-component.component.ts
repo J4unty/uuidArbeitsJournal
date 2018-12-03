@@ -327,7 +327,7 @@ export class JournalComponentComponent implements OnInit {
           {
             type: 'images',
             content: [
-              '/assets/images/wireframes.png'
+              '/uuid/assets/images/wireframes.png'
             ]
           }
         ]
@@ -478,7 +478,7 @@ export class JournalComponentComponent implements OnInit {
           {
             type: 'images',
             content: [
-              '/assets/images/wireframes.png'
+              '/uuid/assets/images/wireframes.png'
             ]
           }
         ]
