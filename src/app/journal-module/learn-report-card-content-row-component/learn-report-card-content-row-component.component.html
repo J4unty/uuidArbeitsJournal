@@ -5,6 +5,9 @@
 <p *ngIf="data.type === 'text'">
   {{ data.content }}
 </p>
+<p *ngIf="data.type === 'link'">
+  <a [href]="data.content">{{ data.content }}</a>
+</p>
 <div *ngIf="data.type === 'images'">
   <div class="swiper-container" [swiper]="config" [(index)]="index">
     <div class="swiper-wrapper">

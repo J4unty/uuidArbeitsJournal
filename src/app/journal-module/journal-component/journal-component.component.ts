@@ -16,7 +16,7 @@ export class JournalComponentComponent implements OnInit {
     title: 'UUID Journal',
     content: [
       {
-        title: 'Erste Tage',
+        title: 'Block #1',
         content: [
           {
             title: 'AEIOU',
@@ -192,7 +192,7 @@ export class JournalComponentComponent implements OnInit {
             ]
           }
         ]
-      } /*,
+      }, /*,
       {
         title: 'learning day 01',
         content: [
@@ -231,8 +231,286 @@ export class JournalComponentComponent implements OnInit {
           }
         ]
       }*/
-  ]
-  };
+  {
+    title: 'Block #2',
+    content: [
+      {
+        title: 'Personas',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Das Persona dient dazu dass man schnell einen Sponsor User genau spezifizieren und beschreiben kann, in meinem Fall ist das der Student Sandro'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Name: Sandro'
+              },
+              {
+                type: 'text',
+                content: 'Alter: 23 Jahre'
+              },
+              {
+                type: 'text',
+                content: 'Zitat: "Wann ist der nächste Test?"'
+              }
+            ]
+          },
+          {
+            type: 'text',
+            content: 'Beschreibung: Als Student bin ich immer am die optimalen Lösungen suchen für meinen studiums Alltag. Dazu gehört zum Beispiel, die nächsten Tests wo sich diese Befinden und wichtig auch welches Menue heute in der Mensa angeboten wird.'
+          }
+        ]
+      }, 
+      {
+        title: 'UX Mapping',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Pain Points der Aktuellen Lösung'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Suchen das aktuellen Zimmers sehr müsahm'
+              },
+              {
+                type: 'text',
+                content: 'Suchen der aktuellen Testes unmöglich'
+              },
+              {
+                type: 'text',
+                content: 'Umständliches suchen des Zimmers'
+              }
+            ]
+          },
+          {
+            type: 'text',
+            content: 'Verbesserungen der neuen App'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Alles an einem Platz'
+              },
+              {
+                type: 'text',
+                content: 'Einfache übersicht über das Wetter'
+              },
+              {
+                type: 'text',
+                content: 'Einfache übersicht über kommende Tests'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Design Studio',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Hier habe ich mal die Idee als Wireframe skiziert:'
+          },
+          {
+            type: 'images',
+            content: [
+              '/assets/images/wireframes.png'
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Design Guidliens',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Als Guidelines werden die Standart Guidelines der jehweiligen Platform genommen. Um mehr uniform mit anderen Apps aufzutreten.'
+          }
+        ]
+      },
+      {
+        title: 'Gestaltungsgeseze',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Folgende Regeln auf die Geachtet werden soll:'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Ähnlichkeit: ähnliche Elemente werden als zusammengehörig wahrgenommen.'
+              },
+              {
+                type: 'text',
+                content: 'Nähe: auch nahe Elemente werden als zusammenghörig wahrgenommen.'
+              },
+              {
+                type: 'text',
+                content: 'Prägnanz: ein Element kann Farblich oder formlich von anderen Elementen hervorgehoben werden um es wichtiger zu machen.'
+              },
+              {
+                type: 'text',
+                content: 'Geschlossenheit: Elemente können in einer Abgeschlossenen Box gruppiert werden.'
+              },
+              {
+                type: 'text',
+                content: 'Kontinuität: Elemente brechen nicht die Desgin guidlines der App/Vendors.'
+              },
+              {
+                type: 'text',
+                content: 'Gemeinsames Schicksahl: Anliche Elemente machen etwas Ähnliches.'
+              },
+              {
+                type: 'text',
+                content: 'Gemeinsame Regionen: Regionen vom Screen sehen uniform aus.'
+              },
+              {
+                type: 'text',
+                content: 'Verbundenheit: Elemente sind klar miteinander Verbunden.'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    title: 'Block #3',
+    content: [
+      {
+        title: 'Card Sorting',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Feature nächste Tests'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Anzeigen des Raumes'
+              },
+              {
+                type: 'text',
+                content: 'Anzeigen des Stoffes'
+              },
+              {
+                type: 'text',
+                content: 'Wann der Test statfindet'
+              },
+              {
+                type: 'text',
+                content: 'Welche besonderen Bestimmungen sind gesetzt?'
+              }
+            ]
+          },
+          {
+            type: 'text',
+            content: 'Feature nächste Lektion'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Anzeigen des Raumes'
+              },
+              {
+                type: 'text',
+                content: 'Wann sie statfindet'
+              },
+              {
+                type: 'text',
+                content: 'Anwesenheitspflicht?'
+              }
+            ]
+          },
+          {
+            type: 'text',
+            content: 'Feature Mensa'
+          },
+          {
+            type: 'list',
+            content: [
+              {
+                type: 'text',
+                content: 'Anzeigen der Menues'
+              },
+              {
+                type: 'text',
+                content: 'Anzeigen des Preises'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Wireframes / Flowchart',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Die Wireframes sind hier dargestellt:'
+          },
+          {
+            type: 'images',
+            content: [
+              '/assets/images/wireframes.png'
+            ]
+          }
+        ]
+      },
+      {
+        title: 'Design Progress Board',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Als Vorlage wurde das Design Board vom FHNW coperate Design genommen.'
+          }
+        ]
+      },
+      {
+        title: 'Mockups / Testing',
+        author: this.owner.name,
+        avatar: this.owner.avatar,
+        content: [
+          {
+            type: 'text',
+            content: 'Als Prototyping tool wurde Adobe XD verwendet, der link zum Mockup ist hier:'
+          },
+          {
+            type: 'link',
+            content: 'https://xd.adobe.com/view/c2a53ea9-b9ae-4d69-6330-72a9c8fc4c0e-b494/'
+          }
+        ]
+      }
+    ]
+  }]};
   constructor() { }
 
   ngOnInit() {
