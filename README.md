@@ -3,14 +3,13 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.2.
 
 ## Missing features
-* Pictures don't run anymore
 * updage Readme
 * fix layout in the project
 * CSS beautification
 
 ## Development server
 
-Run `yarn start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `yarn start` for a dev server. Navigate to `http://localhost:4200/uuid/`. The app will automatically reload if you change any of the source files.
 
 ## Build
 
